@@ -15,7 +15,7 @@ function getInstance(){
         return axiosInstance;
     }
     axiosInstance = axios.create({
-        baseURL: process.env.VUE_APP_BASE_API,
+        baseURL: process.env.REACT_APP_API_URL,
         headers: getHeaders()
     })
 
