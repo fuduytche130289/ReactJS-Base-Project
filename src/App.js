@@ -1,9 +1,11 @@
+import Login from "./pages/login.js"
+import SignUp from "./pages/signup.js";
+
 function App() {
-  return (
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-  );
+    return <div>
+        <Login></Login>
+        <SignUp></SignUp>
+    </div>
 }
 
 export default App;
