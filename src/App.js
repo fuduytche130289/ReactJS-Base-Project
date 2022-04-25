@@ -1,8 +1,13 @@
+import HomePage from "./pages/homePage";
+import Footer from "./pages/footer";
+import Header from "./pages/header";
+
 function App() {
   return (
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <div>
+          <Header></Header>
+          <Footer></Footer>
+      </div>
   );
 }
 
