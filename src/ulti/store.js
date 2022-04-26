@@ -1,15 +1,7 @@
-import React, { useEffect, useReducer } from "react";
+import { configureStore } from "@reduxjs/toolkit";
 
-import productReducer from "../reducer/productReducer";
+import rootReducer from "../reducer";
 
-export const Store = React.createContext();
-
-export const MyStore = ({ children }) => {
-    const [state, dispatch] = useReducer(productReducer, {});
-
-    useEffect(() => {
-        dispatch({});
-    }, []);
-
-    return <Store.Provider value={[state, dispatch]}>{children}</Store.Provider>;
-};
+export default configureStore({
+    reducer: rootReducer,
+});

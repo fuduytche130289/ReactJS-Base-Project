@@ -73,7 +73,7 @@ const productReducer = (state = initialSate, action) => {
             };
 
         default:
-            return initialSate;
+            return state;
     }
 };
 
