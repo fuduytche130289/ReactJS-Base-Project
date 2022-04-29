@@ -9,9 +9,8 @@ function App() {
   return (
       <>
         <BrowserRouter>
-            <Link to="/add">Add</Link>
             <Routes>
-                <Route path = "/" element = {<List />}/>
+                <Route path = "/" element = {<Add />}/>
                 <Route path = "/add" element = {<Add />}/>
                 <Route path = "/edit" element = {<Edit />}/>
                 <Route path = "/gallery" element = {<GalleryImage />}/>
